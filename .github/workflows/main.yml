@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+
+      - name: Navigate to Code Directory
+        run: cd ${{ github.workspace }}
+
+      - name: Run Docker Compose Up with Sudo
+        run: sudo docker-compose up -d --build
