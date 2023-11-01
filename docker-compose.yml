@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   flask:
@@ -24,8 +24,10 @@ services:
 
   cloudflared:
     image: cloudflare/cloudflared:latest
-    command: tunnel --no-autoupdate run --token $TOKEN_SECRET
+    command: tunnel --no-autoupdate run --token ${CF_TOKEN}
     restart: always
+    environment:
+      - CF_TOKEN
 
 networks:
   default:

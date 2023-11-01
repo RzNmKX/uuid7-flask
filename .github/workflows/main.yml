@@ -12,8 +12,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
+      - name: Set up Docker Compose
+        run: echo "CF_TOKEN=${{ secrets.CF_TOKEN }}" >> $GITHUB_ENV
+
       - name: Navigate to Code Directory
         run: cd ${{ github.workspace }}
 
       - name: Run Docker Compose Up with Sudo
-        run: sudo docker-compose up -d --build
+        run: sudo -E docker-compose up -d --build
