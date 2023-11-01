@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #333;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+[id^='uuid'] {
+  font-weight: bold;
+  margin: 20px 0;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+#uuid_validate {
+  width: 100%;
+  box-sizing: border-box; /* ensures that padding and border are included in the total width */
+  padding: 10px; 
+  margin-bottom: 10px;
+}
+
+#validationResult {
+display: none;
+margin-top: 15px;
+padding: 10px;
+border-radius: 5px;
+background-color: #e9ecef;
+font-style: italic;
+color: #333;
+border: 1px solid #b5b5b5;
+width: 100%;
+box-sizing: border-box;
+}
+
+#validationResult.valid {
+background-color: #d4edda;  /* Light green background for valid UUIDs */
+color: #155724;             /* Dark green text for valid UUIDs */
+border-color: #c3e6cb;
+}
+
+#validationResult.invalid {
+background-color: #f8d7da;  /* Light red background for invalid UUIDs */
+color: #721c24;             /* Dark red text for invalid UUIDs */
+border-color: #f5c6cb;
+}
