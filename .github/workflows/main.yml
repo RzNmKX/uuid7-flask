@@ -1,4 +1,5 @@
 name: Docker Deploy
+runs-on: self-hosted
 
 on:
   push:
@@ -9,5 +10,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
