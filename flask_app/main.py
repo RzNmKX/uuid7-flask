@@ -44,4 +44,4 @@ def validate_uuid(uuid):
 
 if __name__ == '__main__':
     # listen on all IPs
-    app.run(host='0.0.0.0', port=5602, debug=True)
+    app.run(host='0.0.0.0', port=5602, debug=False)
