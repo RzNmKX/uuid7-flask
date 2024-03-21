@@ -12,7 +12,7 @@
 
     <h1>UUIDv7: The Time-Sortable Identifier for Modern Databases</h1>
 
-    <p>The world of unique identifiers is vast, and UUIDs (Universally Unique Identifiers) have long held a prominent position due to their ability to uniquely identify information across distributed systems. Among the UUID versions, UUIDv7 (<a href="https://datatracker.ietf.org/doc/draft-ietf-uuidrev-rfc4122bis/">IETF RFC4122 link</a>)  has recently garnered attention. This simple webpage (including the UUID7 Generator and UUIDv7 validator!) is designed to explore the benefits, especially its significance in database systems.</p>
+    <p>The world of unique identifiers is vast, and UUIDs (Universally Unique Identifiers) have long held a prominent position due to their ability to uniquely identify information across distributed systems. Among the UUID versions, UUIDv7 (<a href="https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-04.html#name-uuid-version-7">IETF RFC4122 link</a>)  has recently garnered attention. This simple webpage (including the UUID7 Generator and UUIDv7 validator!) is designed to explore the benefits, especially its significance in database systems.</p>
 
     <h2>Generate a UUIDv7:</h2>
     <p id="uuid"></p>
@@ -33,7 +33,7 @@
 
     <ul>
         <li><strong>Time-Sortability</strong>: As mentioned, UUIDv7 values are time-sortable, which means you can sort them in increasing order based on when they were generated. This makes time-based queries more efficient and intuitive.</li>
-        <li><strong>Precise Timestamping</strong>: With a granularity of up to 50 nanoseconds, UUIDv7 offers excellent precision. This, when combined with the randomness, essentially guarantees that collisions (even among globally distributed systems!) are impossible.</li>
+        <li><strong>Precise Timestamping</strong>: With a granularity of up to 50 nanoseconds as of previous drafts (but a default of 1 millisecond as of writing, see <a href="https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-04.html#name-uuid-version-7">draft RFC4122</a>), UUIDv7 offers excellent precision. This, when combined with the randomness, essentially guarantees that collisions (even among globally distributed systems!) are impossible.</li>
         <li><strong>Global Uniqueness</strong>: Like other UUIDs, UUIDv7 ensures global uniqueness. This means you can generate IDs independently across different systems or nodes, and they won't collide.</li>
     </ul>
 
