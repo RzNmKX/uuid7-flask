@@ -1,7 +1,8 @@
 from flask import Flask, render_template, jsonify, abort
-from uuid_extensions import uuid7, uuid7str, uuid_to_datetime
+# from uuid_extensions import uuid7, uuid7str, uuid_to_datetime
 from werkzeug.middleware.proxy_fix import ProxyFix
 import re
+from uuid7 import uuid7, uuid7str, uuid_to_datetime
 
 UUIDv7_PATTERN = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE)
 
